@@ -1,0 +1,139 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body  {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }
+
+  #hero {
+    display: flex;
+    height: 100vh;
+  }
+
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+
+  #hero h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-left, .hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .hero-right {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+    border: px solid;
+    box-shadow: 0 4px 6px rgba(231, 228, 228, 0.356);
+    text-align: center;
+  }
+
+  .hero-right p {
+    line-height: 25px;
+    margin-bottom: 220px;
+    width: 35rem;
+  }
+
+  .hero-left {
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Centers text */
+  }
+  
+  .hero-left img {
+    width: 45%;
+    border-radius: 10%;
+    border: 2px solid;
+    box-shadow: 0 4px 6px rgba(231, 228, 228, 0.356);
+    object-fit: cover;
+    margin-bottom: 1rem; /* Adds space below the image */
+  }
+
+  img:hover {
+    transform: scale(1.1) 0.3s ease; /* Enlarges the image slightly */
+    opacity: 0.8; /* Makes the image slightly transparent */
+  }
+  
+  
+  /* Hero Section 
+  #hero {
+    background-color: gray;
+    color: black;
+    text-align: center;
+    text-align: center;
+    padding: 3rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  img {
+    border-radius: 50px;
+  }
+
+  #hero h1 {
+    font-size: 3rem;
+  }
+  */
+  /* Section Styling */
+  section {
+    padding: 2rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  h1, h2 {
+    color: #fff;
+  }
+
+  #projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  .card {
+    background-color: gray;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(243, 240, 240, 0.932);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    color: black;
+  }
+  
+  
+  .project img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    section {
+      padding: 1rem;
+    }
+  }
+  
